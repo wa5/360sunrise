@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+
+        <style>
+#box{
+    background-color: red;
+    color: white;
+font-size: 40px;
+font-weight: 600px;
+display: none;
+}
+
+@media (max-width:576px){
+    #box-1{
+display: inline-block;
+background-color: green;
+}
+}
+
+@media (max-width:300px){
+    #box-1{
+        display: block;
+        background-color: violet;
+    }
+}
+        </style>
+        
+<div id="container">
+
+
+<center>
+
+
+
+    <div id="box" id="box-1">small mobile -xm less576px </div>
+    <div id="box" class="box-2">2  sm mobile  sm---576</div>
+    <div id="box" class="box-3">3 medium  md 768</div>
+    <div id="box" class="box-4">4 large lg 992</div>
+    <div id="box" class="box-5">5 extra l  xlg 1200</div>
+</center>
+</div>
+
+
+
+
+
+
+        <script src="" async defer></script>
+    </body>
+</html>

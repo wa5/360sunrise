@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+
+
+        <style>
+#root{
+    width: 100px;
+    height: 100px;
+    background-color: seagreen;
+    position: relative;
+    animation-name: dancing;
+    animation-duration: 6s;
+}
+
+@keyframes dancing{
+    0%{ background-color: red; border-radius: 50%; left: 0;top: 0;}
+    25%{ background-color: rgb(30, 255, 0); border-radius: 40%; left: 100%;top: 0;}
+    50%{ height: 500px; background-color: rgb(25, 0, 255); border-radius: 30%; left: 200px;top: 200px;}
+    75%{ background-color: rgb(167, 82, 82); border-radius: 20%; left: 0;top: 200px;}
+    100%{ background-color: rgb(200, 255, 0); border-radius: 10%; left: 0;top: 0;}
+}
+
+        </style>
+      <div id="root"></div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
