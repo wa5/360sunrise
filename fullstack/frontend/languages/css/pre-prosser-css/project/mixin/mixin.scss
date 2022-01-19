@@ -1,0 +1,20 @@
+
+@mixin common($bg,$fz,$co){
+    background-color: $bg;
+    font-size: $fz;
+    color: $co;
+}
+
+#a{
+  @include common(red,70px,white)
+}
+#a2{
+    @include common(green,40px,blue)
+}
+#a3{
+    @include common(white,60px,green)
+}
+$name:600px;
+h2{
+    color: red;
+}

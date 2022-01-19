@@ -1,0 +1,18 @@
+#a {
+  background-color: red;
+  font-size: 70px;
+  color: white;
+}
+
+#a2 {
+  background-color: green;
+  font-size: 40px;
+  color: blue;
+}
+
+#a3 {
+  background-color: white;
+  font-size: 60px;
+  color: green;
+}
+/*# sourceMappingURL=mixin.css.map */
