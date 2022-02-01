@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title></title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="" />
+    </head>
+    <body>
+        <style>
+            #root2 {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                position: relative;
+                animation-name: example;
+                animation-duration: 4s;
+            }
+
+            @keyframes example {
+                0% {
+                    background-color: red;
+                    left: 0px;
+                    top: 0px;
+                }
+                25% {
+                    background-color: yellow;
+                    left: 200px;
+                    top: 0px;
+                }
+                50% {
+                    background-color: blue;
+                    left: 200px;
+                    top: 200px;
+                }
+                75% {
+                    background-color: green;
+                    left: 0px;
+                    top: 200px;
+                }
+                100% {
+                    background-color: red;
+                    left: 0px;
+                    top: 0px;
+                }
+            }
+        </style>
+        <div id="root"></div>
+        <div id="root2">active cases</div>
+        <script>
+            fetch('https://data.covid19india.org/data.json')
+                .then((data) => {
+                    return data.json();
+                })
+                .then((data2) => {
+                    var h1 = document.createElement('h1');
+                    h1.innerHTML = data2.statewise[0].active;
+                    document.getElementById('root2').appendChild(h1);
+                    console.log(data2.statewise[0].active);
+                });
+            // var data = fetch('https://api.github.com/users')
+            //     .then((data) => {
+            //         return data.json();
+            //     })
+            //     .then((data2) => {
+            //         for (i = 0; i < 10; i++) {
+            //             var img = document.createElement('img');
+            //             img.src = data2[i].avatar_url;
+            //             document.getElementById('root').appendChild(img);
+            //         }
+
+            //         console.log(data2[0].avatar_url);
+            //     });
+        </script>
+    </body>
+</html>
