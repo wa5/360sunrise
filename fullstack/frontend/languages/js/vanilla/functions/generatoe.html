@@ -1,0 +1,16 @@
+<script>
+    function count(a) {
+        return a;
+        return a + 10;
+    }
+    console.log(count(10));
+    console.log(count(10));
+
+    function* generator(i) {
+        yield i;
+        yield i + 10;
+    }
+    const gen = generator(10);
+    console.log(gen.next());
+    console.log(gen.next());
+</script>

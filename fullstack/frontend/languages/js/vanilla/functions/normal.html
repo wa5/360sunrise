@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title></title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="" />
+    </head>
+    <body>
+        <div id="root"></div>
+        <script>
+            function printH1(data) {
+                var h1 = document.createElement('h1');
+                h1.innerHTML = data;
+                document.getElementById('root').appendChild(h1);
+            }
+            printH1('hello');
+            printH1('hi');
+            printH1('univers');
+            printH1('hsahj');
+
+            function test(val) {
+                var data = val;
+                console.log(data);
+            }
+            test('hello');
+            test(23);
+            test(true);
+            test({ key: 'ghgh' });
+        </script>
+    </body>
+</html>

@@ -1,18 +1,36 @@
 <script>
-    var froutes = [];
+    var myFruites = ['apple', 'boll', 'cat', 'dog'];
 
-    console.log(froutes);
+    var data = myFruites.find((a) => {
+        return a === 'apple';
+    });
+    console.log(data);
+    var data = myFruites.filter((a) => {
+        return a === 'apple';
+    });
+    console.log(data);
 
-    froutes.push('apple');
-    froutes.push('banana');
-    froutes.push('mango');
-    console.log(froutes);
+    var numbers = [10, 10, 10];
+    console.log(numbers.reduce(myFun));
 
-    //froutes.pop();   from end it removes value
-    //froutes.shift();  from front
+    function myFun(total, num) {
+        return total + num;
+    }
 
-    delete froutes[1];
-    console.log(froutes);
+    // var froutes = [];
+
+    // console.log(froutes);
+
+    // froutes.push('apple');
+    // froutes.push('banana');
+    // froutes.push('mango');
+    // console.log(froutes);
+
+    // //froutes.pop();   from end it removes value
+    // //froutes.shift();  from front
+
+    // delete froutes[1];
+    // console.log(froutes);
 
     // var name1="sarifa"
     // var name2="hemanth"

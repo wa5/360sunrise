@@ -1,0 +1,27 @@
+<script>
+    var arr = ['apple', 'boll', 'cat'];
+    var [a, b, c] = arr;
+    console.log(arr[0]);
+    console.log(a);
+    //--destructuring
+    function contextSetting() {
+        var fruites = [];
+        function setFrutes(data) {
+            return (fruites = data);
+        }
+        return [fruites, setFrutes];
+    }
+    var [fruits, setFrutes] = contextSetting();
+
+    console.log(fruits);
+    console.log(setFrutes('dskjhdshkj'));
+
+
+function a(b){
+b()
+}
+
+var b=()=>{}
+
+
+</script>
