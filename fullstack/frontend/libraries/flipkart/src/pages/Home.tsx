@@ -1,35 +1,89 @@
-
-import { Button, ButtonGroup, Grid } from "@mui/material"
-
-
-function Home(){
-   
-    return (
-        <>
-     <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} style={{backgroundColor:"yellow"}}>
-     <Grid item xs={12} style={{backgroundColor:"red"}}>
-    <h1 >navbr</h1>
-  </Grid>
-  <br/>
-  <Grid item xs={12} style={{backgroundColor:"red"}}>
-
-    <h1 >image</h1>
-  </Grid>
-  <br/>
-  <Grid item xs={12} style={{backgroundColor:"red"}}>
-    <h1 >slider</h1>
-  </Grid>
-  <br/>
-  <Grid item xs={6} style={{backgroundColor:"red"}}>
-
-    <h1 >cards</h1>
-  </Grid>
-     </Grid>
-        </>
-       
-        
-    )
- }
+import { Button, ButtonGroup, Container, Grid } from "@mui/material";
+import { CardContainer } from "../domain/cards";
+import { CarouselContainer1 } from "../domain/corousel/container/CarouselContainer1";
+import { NavbarContiner } from "../domain/navbars/container/NavbarContiner";
+import img from "../img/2.jpg";
+import Image from "react-bootstrap/Image";
+function Home() {
+  return (
+    <>
+      <Container maxWidth="xl">
+        <NavbarContiner />
+        <Grid
+          container
+          direction="row"
+          justifyContent="space-between"
+          alignItems="center"
+        >
+          <Grid item>
+            <Image roundedCircle height="100px" src={img} />
+          </Grid>
+          <Grid item>
+            <Image roundedCircle height="100px" src={img} />
+          </Grid>
+          <Grid item>
+            <Image roundedCircle height="100px" src={img} />
+          </Grid>
+          <Grid item>
+            <Image roundedCircle height="100px" src={img} />
+          </Grid>
+          <Grid item>
+            <Image roundedCircle height="100px" src={img} />
+          </Grid>
+          <Grid item>
+            <Image roundedCircle height="100px" src={img} />
+          </Grid>
+          <Grid item>
+            <Image roundedCircle height="100px" src={img} />
+          </Grid>
+        </Grid>
+<br/>
+        <Grid>
+          <CarouselContainer1 />
+        </Grid>
+        <br/>
+        <Grid
+          container
+          direction="row"
+          justifyContent="space-evenly"
+          alignItems="center"
+          spacing={3}
+        >
+          <CardContainer />
+          <CardContainer />
+          <CardContainer />
+          <CardContainer />
+        </Grid>
+        <br/>
+        <Grid
+          container
+          direction="row"
+          justifyContent="space-evenly"
+          alignItems="center"
+          spacing={3}
+        >
+          <CardContainer />
+          <CardContainer />
+          <CardContainer />
+          <CardContainer />
+        </Grid>
+        <br/>
+        <Grid
+          container
+          direction="row"
+          justifyContent="space-evenly"
+          alignItems="center"
+          spacing={3}
+        >
+          <CardContainer />
+          <CardContainer />
+          <CardContainer />
+          <CardContainer />
+        </Grid>
+      </Container>
+    </>
+  );
+}
 // interface H1{
 //     data:string
 //     num?:number
@@ -38,7 +92,7 @@ function Home(){
 // const H1=(props:H1)=>{return (<h1>{props.data}</h1>)}
 
 // interface H2{
-   
+
 // }
 // const h2:React.FC<H1>=()=>{return (<h2></h2>)}
-export default Home
+export default Home;

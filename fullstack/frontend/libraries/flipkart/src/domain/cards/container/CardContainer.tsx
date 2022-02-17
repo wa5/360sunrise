@@ -1,11 +1,5 @@
-import React from 'react';
+import { connect } from "react-redux";
+import MyMediaCard from "../components/MyMediaCard";
 
-export interface ICardContainerProps{};
+export const  CardContainer:React.ComponentType=connect()(MyMediaCard)
 
-const  CardContainer:React.FC<ICardContainerProps>=(props)=>{
-    return (<>
-     
-    </>);
-};
-
-export default CardContainer;

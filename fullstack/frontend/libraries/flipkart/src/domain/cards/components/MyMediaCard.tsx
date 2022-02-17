@@ -5,14 +5,18 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-
+import img from '../../../img/2.jpg'
+import { Grid } from '@mui/material';
 export default function MyMediaCard() {
   return (
+    <Grid item sm={3}>
+
+ 
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
         height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
+        image={img}
         alt="green iguana"
       />
       <CardContent>
@@ -29,5 +33,6 @@ export default function MyMediaCard() {
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
+    </Grid>
   );
 }
