@@ -14,3 +14,9 @@ const fs=require('fs')
 //console.log(data)
 //fs.unlinkSync('sarifa/h.txt')
 fs.rmdirSync('l')
+
+//adding file
+
+let datrr=`--FILE APPENDS DATE---${new Date()  } --FILE APPENDS IP---${ip.address()}`
+fs.appendFileSync("syarifah/bread.txt", datrr)
+fs.appendFileSync("syarifah/bread2.txt", "--FILE APPENDS IP---" + )
