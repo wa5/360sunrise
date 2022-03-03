@@ -9,16 +9,13 @@ app.set('view engine','ejs')
 app.set('views',path.join(__dirname,'src/views'))
 
 
+//poind
 
+const  endPoint=require('./src/routes')
+app.use('/api',endPoint.login)
+app.use('/api',endPoint.home)
+app.use('/api',endPoint.register)
 
-app.get('/home',(req,res)=>{
-    var g=5666
-    res.render('home',{key:g})
-})
-app.get('/about',(req,res)=>{
-    var g=5666
-    res.render('about')
-})
 
 
 
