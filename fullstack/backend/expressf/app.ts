@@ -1,4 +1,5 @@
 import express from "express";
+require('./config/db.config')
 require('dotenv').config()
 const app = express();
 app.set('port',process.env.PORT||3001)
@@ -7,7 +8,7 @@ const path=require('path')
 const ejs=require('ejs')
 app.set('view engine','ejs')
 app.set('views',path.join(__dirname,'src/views'))
-
+app.use(express.static(path.join(__dirname,'src/public')))
 
 //poind
 
