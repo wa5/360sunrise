@@ -7,7 +7,15 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import img from '../../../img/2.jpg'
 import { Grid } from '@mui/material';
-export default function MyMediaCard() {
+
+
+interface IMyMediaCard{
+  name:string
+}
+
+
+
+export default function MyMediaCard<IMyMediaCard>(props: any) {
   return (
     <Grid item sm={3}>
 
@@ -21,7 +29,7 @@ export default function MyMediaCard() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          {props.name}
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Lizards are a widespread group of squamate reptiles, with over 6,000
